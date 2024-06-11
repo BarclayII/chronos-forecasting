@@ -658,7 +658,7 @@ def main(
         logging_steps=log_steps,
         save_strategy="steps",
         save_steps=save_steps,
-        report_to=["tensorboard"],
+        report_to="wandb",
         max_steps=max_steps,
         gradient_accumulation_steps=gradient_accumulation_steps,
         dataloader_num_workers=dataloader_num_workers,
